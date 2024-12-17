@@ -1,8 +1,14 @@
 {
     "builds": [
         {
-            "src": "package.json",
+            "src": "App.js",
             "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.)",
+            "dest": "/App.js"
         }
     ],
     "env": {
@@ -10,7 +16,7 @@
     },
     "rewrites": [
         {
-            "source": "/(.*)",
+            "source": "/(.)",
             "destination": "/"
         }
     ]

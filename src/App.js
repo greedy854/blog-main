@@ -13,7 +13,7 @@ const cors = require('cors');
 const app = express();
 
 // Allow requests from Vercel domain (replace with your actual Vercel domain)
-const allowedOrigins = ['https://blog-main-bd8ewk4wx-greedy854s-projects.vercel.app'];
+const allowedOrigins = ['https://blog-main-blush.vercel.app/'];
 const corsOptions = {
   origin: (origin, callback) => {
     if (!origin || allowedOrigins.includes(origin)) {
