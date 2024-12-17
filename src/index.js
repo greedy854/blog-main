@@ -11,6 +11,5 @@ root.render(
     <App />
   </React.StrictMode>
 );
-
 // Register the service worker to enable offline functionality and PWA features
 serviceWorkerRegistration.register(); // Registers the service worker for PWA functionality
