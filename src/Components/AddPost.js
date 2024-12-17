@@ -77,3 +77,4 @@ const styles = {
 };
 
 export default AddPost;
+
