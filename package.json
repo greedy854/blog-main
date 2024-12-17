@@ -7,11 +7,8 @@
     "assert": "^2.1.0",
     "async-hooks": "^1.3.1",
     "browserfs": "^1.4.3",
-    "browserify-zlib": "^0.2.0",
-    "buffer": "^6.0.3",
     "concurrently": "^9.1.0",
     "cors": "^2.8.5",
-    "cra-template": "1.2.0",
     "crypto-browserify": "^3.12.1",
     "json-server": "^1.0.0-beta.3",
     "path-browserify": "^1.0.1",
@@ -31,7 +28,8 @@
     "eject": "react-scripts eject",
     "server": "json-server --watch db.json --port 5000",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "heroku-deploy": "git push heroku main"
   },
   "eslintConfig": {
     "extends": [
