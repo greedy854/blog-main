@@ -7,6 +7,37 @@ import './App.css'; // Optional: Add styling for layout
 
 const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000"; // Fallback for local dev
 
+const express = require('express');
+const cors = require('cors');
+
+const app = express();
+
+// Allow requests from Vercel domain (replace with your actual Vercel domain)
+const allowedOrigins = ['https://blog-main-bd8ewk4wx-greedy854s-projects.vercel.app'];
+const corsOptions = {
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  methods: 'GET, POST, PUT, DELETE',
+};
+
+// Apply CORS middleware
+app.use(cors(corsOptions));
+
+// Your routes here, for example:
+app.get('/posts', (req, res) => {
+  // Your logic to fetch and return posts
+});
+
+// Start server
+const port = process.env.PORT || 5000;
+app.listen(port, () => console.log(`Server running on port ${port}`));
+
+
 function App() {
   const [posts, setPosts] = useState([]);
 
