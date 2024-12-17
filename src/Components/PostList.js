@@ -64,5 +64,4 @@ const styles = {
   },
 };
 
-
 export default PostList;
