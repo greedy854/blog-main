@@ -32,7 +32,47 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.sections {
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+section {
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+h2 {
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 1rem;
+  }
+
+  .sections {
+    padding: 1rem;
+  }
+
+  .post {
+    width: 100%;
   }
 }
