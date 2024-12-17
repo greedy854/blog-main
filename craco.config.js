@@ -16,6 +16,8 @@ module.exports = {
           util: require.resolve('util/'),
           zlib: require.resolve('browserify-zlib'),
           assert: require.resolve('assert/'),
+          vm: require.resolve('vm-browserify'), // Add this line for the vm polyfill
+          async_hooks: false, // Disable async_hooks, or polyfill if required
         };
         return config;
       },

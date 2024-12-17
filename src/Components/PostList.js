@@ -57,20 +57,12 @@ const styles = {
     fontSize: '1rem',
     lineHeight: '1.6',
     color: '#666',
-  },  post: {
-    width: '100%',
-    backgroundColor: '#fff',
-    borderRadius: '8px',
-    padding: '1.5rem',
-    marginBottom: '1.5rem',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-    transition: 'transform 0.3s ease, box-shadow 0.3s ease',
   },
-  postHover: {
+  postHover: {  // Changed from 'post' to 'postHover'
     transform: 'scale(1.03)',
     boxShadow: '0 6px 16px rgba(0, 0, 0, 0.2)',
   },
-
 };
+
 
 export default PostList;
