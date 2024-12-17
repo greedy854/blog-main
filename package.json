@@ -5,10 +5,11 @@
   "dependencies": {
     "concurrently": "^9.1.0",
     "cra-template": "1.2.0",
+    "json-server": "^1.0.0-beta.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-scripts": "5.0.1",
-    "json-server": "^1.0.0-beta.3"
+    "serve": "^14.2.4"
   },
   "scripts": {
     "start": "concurrently \"react-scripts start\" \"json-server --watch db.json --port 5000\"",
